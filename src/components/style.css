@@ -1,0 +1,123 @@
+.input{
+    display: flex;
+    width: 65%;
+    position: relative;
+    align-items: center;
+}
+.input_box{
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+
+}
+.input_box:focus{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 1000px;
+    outline: none;
+}
+.input_submit{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0;
+    border: none;
+    font: 15px;
+    background-color: #328ae7;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+.input_submit:hover{
+    background-color: #3295ff;
+}
+.input_submit:active{
+    transform: scale(0.7);
+    box-shadow: 0 0 5px black;
+}
+.container {
+  display: flex;
+  width: 95%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+.todos{
+    display: block;
+  justify-content: center;
+    width: 47.5%;
+    margin: auto;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(50, 195, 205);
+    margin-bottom: 30px;
+}
+.todos_heading{
+  font-size: 30px;
+  color: white;
+}
+.todos_single{
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: url("https://assets-global.website-files.com/55e67eeba2e73cb76514f165/59e11e694221ad0001bde6ef_Interactions%20%26%20Animations.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition:  0.2s;
+}
+.todos_single:hover{
+  transform: scale(1.05);
+  box-shadow:  0 0 5px black;
+}
+.todos_single--text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 25px !important;
+  }
+  
+  .todos__single--text:focus {
+    outline: none;
+  }
+  
+  .icon {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+
+  @media (max-width: 1100px) {
+    .todos__single {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .input {
+      width: 95%;
+    }
+    .todos {
+      width: 95%;
+      margin-bottom: 10px;
+    }
+    .todos__single {
+      width: 100%;
+    }
+    .container{
+      width: 95%;
+      flex-direction: column;
+    }
+  }
+.remove{
+  background-color: rgb(254, 128, 106);
+}

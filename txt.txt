@@ -1,0 +1,34 @@
+
+let name:string;
+let age: number;
+let isStudent:boolean;
+let hobbies:string[];
+let role:[number, string];
+
+// function printName(name:string){
+//   console.log(name)
+// }
+// printName("debu")
+
+// type Person={
+//   name:string;
+//   age?:number;
+// };
+
+// let person: Person={
+//   name:"Piyush",
+// };
+
+// type Y= X &{
+//   c:string;
+// }
+
+// type X={
+//   a:string;
+//   b:number;
+// };
+
+// interface Person {
+//   name:string;
+
+// }
